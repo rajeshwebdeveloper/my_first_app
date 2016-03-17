@@ -1,0 +1,20 @@
+<body bgcolor='cyan'>
+<h1 align='center'>Hello World!!!</h1>
+		<table align='center'>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% @users.each do |user|%>
+					<tr>
+						<td><%= user.user_name%></td>
+						<td><%= user.email%></td>
+					</tr>
+				<%end%>
+			</tbody>
+		</table>
+</body>
+</html>
